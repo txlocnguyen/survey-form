@@ -35,7 +35,7 @@
                 <input type="number" name="age" id="number" min="01" max="99"class="form-control"placeholder="Age" required/>
             </div>
             <div class="form-group">
-                <p>Which of the following describes you best?</p>
+                <p id="question-label">Which of the following describes you best?</p>
                 <select id="dropdown" name="role" class="form-control" required>
                   <option disabled selected value>Please select an option</option>
                   <option value="student">Student</option>
@@ -47,7 +47,7 @@
             </div>
             <div class="form-group">
                 <label id="frequency-label" for="frequency">How often do you fly?</label>
-               <label> <input type="radio" name="frequency" value="onceaweek" class="input-checkbox"/>Once a week or more</label>
+               <label> <input type="radio" name="frequency" value="onceaweek" class="input-checkbox" checked/>Once a week or more</label>
                <label> <input type="radio" name="frequency" value="2-3timesamonth" class="input-checkbox"/>2-3 times a month</label>
                <label> <input type="radio" name="frequency" value="onceamonth" class="input-checkbox"/>Once a month</label>
                <label> <input type="radio" name="frequency" value="fewtimesayear" class="input-checkbox"/>A few times a year</label>
@@ -55,15 +55,15 @@
                <label> <input type="radio" name="frequency" value="never" class="input-checkbox"/>Never</label>
             </div>
             <div class="form-group">
-                <p>Would you recommend Mass Airway to a friend?</p>
+                <p id="question-label">Would you recommend Mass Airway to a friend?</p>
                 <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked/>Definitely</label>
                 <label><input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
                 <label><input name="user-recommend" value="notsure" type="radio" class="input-radio"/>Not Sure</label>
             </div>
             <div class="form-group">
-                <p> What is your favorite aspect during your flight with Mass Airway?</p>
+                <p id="question-label"> What is your favorite aspect during your flight with Mass Airway?</p>
                 <select id="most-like" name="mostLike" class="form-control" required>
-                  <option disabled selected value>Select an option</option>
+                  <option disabled selected value>Please select an option</option>
                   <option value="availability">Availability of flight attendants</option>
                   <option value="courtesy">Courtesy of flight crews</option>
                   <option value="communication">Airline's communication with passengers</option>
@@ -72,7 +72,7 @@
                 </select>
             </div>
             <div class="form-group">
-                <p>What would you like to see improved?<span class="clue"> (Check all that apply)</span></p>
+                <p id="question-label">What would you like to see improved?<span class="clue"> (Check all that apply)</span></p>
                 <label><input name="prefer" value="luggagespace" type="checkbox" class="input-checkbox"/>Space for luggage storage</label>
                 <label><input name="prefer" value="seatingcomfort" type="checkbox" class="input-checkbox"/>Comfort of seating</label>
                 <label><input name="prefer" value="seatingarrangement" type="checkbox" class="input-checkbox"/>Seating arrangement of aircraft</label>
@@ -83,7 +83,7 @@
                 <label><input name="prefer" value="others" type="checkbox" class="input-checkbox"/>Others (Please specify in the comment section below)</label>
             </div>
             <div class="form-group">
-                 <p>Please tell us what can we do to improve:</p>
+                 <p id="question-label">Please tell us what can we do to improve:</p>
                 <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
               </div>
              <div class="form-group">
